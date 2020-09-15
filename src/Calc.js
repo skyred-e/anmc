@@ -6,9 +6,26 @@ class Calc extends React.Component{
     render(){
         const mainId = this.props.id;
         const mainNum = this.props.number;
-        const mainMats = itemData[mainId].materials;
+        const mainData = itemData[mainId]
+        const mainMats = mainData.materials;
         return(
             <div className="Calc">
+                <div>
+                <Grid
+                container
+                justify="center">
+                    <Grid item xs={6}>
+                <table className="mein-item">
+                <tbody><tr>
+                <td>親アイテム名:{mainData.name}（ID：{mainId}）</td>
+                <td>個数：{mainNum}</td>
+                <td>費用：{mainData.price * mainNum}</td>
+                </tr>
+                </tbody>
+                </table>
+                </Grid>
+                </Grid>
+                </div>
                 <Grid
                 container
                 justify="center"

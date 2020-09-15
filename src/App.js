@@ -1,8 +1,9 @@
 import React from 'react';
 import Calc from './Calc';
 import itemData from './itemData.json';
+import Grid from '@material-ui/core/Grid';
 import FormContlor from '@material-ui/core/FormControl'
-import Button from '@material-ui/core/button';
+import FormHelperText from '@material-ui/core/FormHelperText';
 import TextField from '@material-ui/core/TextField';
 import Select from '@material-ui/core/Select';
 import ImputLabel from '@material-ui/core/InputLabel';
@@ -13,42 +14,38 @@ class App extends React.Component{
     super(props);
     this.state = {
       itemId:0,
-      itemNumber:0,
-      valueCheck:false,
+      itemNumber:1,
     };
   }
 
 
   render(){
-    let item;
     const changeItem = (event) =>{
-      item = event.target.value;
+      this.setState({itemId: event.target.value})
     }
 
-    let num;
     const changeNumber = (event) =>{
-      num = event.target.value;
+      this.setState({itemNumber: event.target.value});
     }
 
-    const handleCheckValue = () =>{
-      if(item && num){
-        this.setState(
-          {itemId: item,
-          itemNumber: num,
-          valueCheck: true}
-        );
-      }
-    }
     return(
       <div>
         <h1>アークナイツ加工アイテム計算機</h1>
+        <div className="item-form">
+          <Grid
+          container
+          justify="center"
+          alighItems="flex-start"
+          >
+            <Grid item xs={3}>
           <FormContlor>
           <ImputLabel id="item-list-label">アイテムを選択</ImputLabel>
           <Select
           labelId="item-list-label"
           id="item-list-select"
-          value={item}
+          value={this.state.itemId}
           onChange={changeItem}
+          style={{width:'150px'}}
           >
             {itemData.map((items)=>{
               return(
@@ -56,6 +53,12 @@ class App extends React.Component{
               );
             })}
           </Select>
+          {this.state.itemError &&
+          (<FormHelperText>アイテムを選択してください。</FormHelperText>)}
+          </FormContlor>
+          </Grid>
+          <Grid item xs={3}>
+          <FormContlor>
           <TextField
           id="itemNumber"
           type="number"
@@ -63,18 +66,16 @@ class App extends React.Component{
           label="個数"
           onChange={changeNumber}
           />
-          <Button
-          variant="contained"
-          onClick={handleCheckValue}
-          >
-            計算する
-          </Button>
-        </FormContlor>
-        {this.state.valueCheck &&
+          {this.state.numberError &&
+          (<FormHelperText>個数を入力してください。</FormHelperText>)}
+          </FormContlor>
+          </Grid>
+          </Grid>
+        </div>
         <Calc
         id={this.state.itemId}
         number={this.state.itemNumber}
-        />}
+        />
       </div>
     );
   }
