@@ -1,0 +1,284 @@
+[
+{
+    "id":0,
+    "name":"D32鋼",
+    "materials":[
+        {"matid":3,"number":1},
+        {"matid":5,"number":1},
+        {"matid":7,"number":1}
+    ],
+    "price":400
+},
+{
+    "id":1,
+    "name":"ナノフレーク",
+    "materials":[
+        {"matid":15,"number":1},
+        {"matid":9,"number":2}
+    ],
+    "price":400
+},
+{
+    "id":2,
+    "name":"融合剤",
+    "materials":[
+        {"matid":11,"number":1},
+        {"matid":27,"number":1},
+        {"matid":31,"number":1}
+    ],
+    "price":400
+},
+{
+    "id":3,
+    "name":"上級マンガン",
+    "materials":[
+        {"matid":4,"number":2},
+        {"matid":20,"number":1},
+        {"matid":10,"number":1}
+    ],
+    "price":300
+},
+{
+    "id":4,
+    "name":"マンガン",
+    "materials":null,
+    "price":0
+},
+{
+    "id":5,
+    "name":"上級砥石",
+    "materials":[
+        {"matid":6,"number":1},
+        {"matid":28,"number":1},
+        {"matid":16,"number":1}
+    ],
+    "price":300
+},{
+    "id":6,
+    "name":"砥石",
+    "materials":null,
+    "price":0
+},{
+    "id":7,
+    "name":"RMA70-24",
+    "materials":[
+        {"matid":8,"number":1},
+        {"matid":12,"number":2},
+        {"matid":32,"number":1}
+    ],
+    "price":300
+},{
+    "id":8,
+    "name":"RMA70-12",
+    "materials":null,
+    "price":0
+},{
+    "id":9,
+    "name":"上級合成コール",
+    "materials":[
+        {"matid":10,"number":1},
+        {"matid":24,"number":1},
+        {"matid":8,"number":1}
+    ],
+    "price":300
+},{
+    "id":10,
+    "name":"合成コール",
+    "materials":null,
+    "price":0
+},{
+    "id":11,
+    "name":"上級源岩",
+    "materials":[
+        {"matid":12,"number":4}
+    ],
+    "price":300
+},{
+    "id":12,
+    "name":"中級源岩",
+    "materials":[
+        {"matid":13,"number":5}
+    ],
+    "price":200
+},{
+    "id":13,
+    "name":"初級源岩",
+    "materials":[
+        {"matid":14,"number":3}
+    ],
+    "price":100
+},{
+    "id":14,
+    "name":"源岩鉱",
+    "materials":null,
+    "price":0
+},{
+    "id":15,
+    "name":"上級装置",
+    "materials":[
+        {"matid":16,"number":1},
+        {"matid":12,"number":2},
+        {"matid":6,"number":1}
+    ],
+    "price":300
+},{
+    "id":16,
+    "name":"中級装置",
+    "materials":[
+        {"matid":17,"number":4}
+    ],
+    "price":200
+},{
+    "id":17,
+    "name":"初級装置",
+    "materials":[
+        {"matid":18,"number":3}
+    ],
+    "price":100
+},{
+    "id":18,
+    "name":"破損装置",
+    "materials":null,
+    "price":0
+},{
+    "id":19,
+    "name":"上級エステル",
+    "materials":[
+        {"matid":20,"number":2},
+        {"matid":32,"number":1},
+        {"matid":10,"number":1}
+    ],
+    "price":300
+},{
+    "id":20,
+    "name":"中級エステル",
+    "materials":[
+        {"matid":21,"number":4}
+    ],
+    "price":200
+},{
+    "id":21,
+    "name":"初級エステル",
+    "materials":[
+        {"matid":22,"number":3}
+    ],
+    "price":100
+},{
+    "id":22,
+    "name":"エステル原料",
+    "materials":null,
+    "price":0
+},{
+    "id":23,
+    "name":"上級糖原",
+    "materials":[
+        {"matid":24,"number":2},
+        {"matid":28,"number":1},
+        {"matid":4,"number":1}
+    ],
+    "price":300
+},{
+    "id":24,
+    "name":"中級糖原",
+    "materials":[
+        {"matid":25,"number":4}
+    ],
+    "price":200
+},{
+    "id":25,
+    "name":"初級糖原",
+    "materials":[
+        {"matid":26,"number":3}
+    ],
+    "price":100
+},{
+    "id":26,
+    "name":"ブドウ糖",
+    "materials":null,
+    "price":0
+},{
+    "id":27,
+    "name":"上級異鉄",
+    "materials":[
+        {"matid":28,"number":2},
+        {"matid":16,"number":1},
+        {"matid":20,"number":1}
+    ],
+    "price":300
+},{
+    "id":28,
+    "name":"中級異鉄",
+    "materials":[
+        {"matid":29,"number":4}
+    ],
+    "price":200
+},{
+    "id":29,
+    "name":"初級異鉄",
+    "materials":[
+        {"matid":30,"number":3}
+    ],
+    "price":100
+},{
+    "id":30,
+    "name":"異鉄の欠片",
+    "materials":null,
+    "price":0
+},{
+    "id":31,
+    "name":"上級アケトン",
+    "materials":[
+        {"matid":32,"number":2},
+        {"matid":24,"number":1},
+        {"matid":4,"number":1}
+    ],
+    "price":300
+},{
+    "id":32,
+    "name":"中級アケトン",
+    "materials":[
+        {"matid":33,"number":4}
+    ],
+    "price":200
+},{
+    "id":33,
+    "name":"初級アケトン",
+    "materials":[
+        {"matid":34,"number":3}
+    ],
+    "price":100
+},{
+    "id":34,
+    "name":"アケトン試剤",
+    "materials":null,
+    "price":0
+},{
+    "id":35,
+    "name":"融合ゲル",
+    "materials":[
+        {"matid":28,"number":1},
+        {"matid":36,"number":1},
+        {"matid":38,"number":1}
+    ],
+    "price":300
+},{
+    "id":36,
+    "name":"人工ゲル",
+    "materials":null,
+    "price":0
+},{
+    "id":37,
+    "name":"上級熾合金",
+    "materials":[
+        {"matid":16,"number":1},
+        {"matid":6,"number":1},
+        {"matid":38,"number":1}
+    ],
+    "price":300
+},{
+    "id":38,
+    "name":"熾合金",
+    "materials":null,
+    "price":0
+}
+]
