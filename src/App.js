@@ -37,7 +37,7 @@ class App extends React.Component{
           justify="center"
           alighItems="flex-start"
           >
-            <Grid item xs={3}>
+            <Grid item xs={6} md={3} sm={6}>
           <FormContlor>
           <ImputLabel id="item-list-label">アイテムを選択</ImputLabel>
           <Select
@@ -57,7 +57,7 @@ class App extends React.Component{
           (<FormHelperText>アイテムを選択してください。</FormHelperText>)}
           </FormContlor>
           </Grid>
-          <Grid item xs={3}>
+          <Grid item xs={6} md={3} sm={6}>
           <FormContlor>
           <TextField
           id="itemNumber"
