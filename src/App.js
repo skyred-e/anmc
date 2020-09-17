@@ -30,7 +30,7 @@ class App extends React.Component{
 
     return(
       <div>
-        <h1>アークナイツ加工アイテム計算機</h1>
+        <h1>アークナイツ加工アイテム計算機（β）</h1>
         <div className="item-form">
           <Grid
           container
